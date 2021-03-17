@@ -20,8 +20,8 @@ const Navbar = () => {
                 <li><a href="#contact">Contact us</a></li>
             </ul>
                 <div className="contact">
-                    <a href="https://github.com/nusantarachain" target="_blank" rel="noopener noreferrer"><FaGithub size={40} /></a>
-                    <a href="https://t.me/nusantarashain" target="_blank" rel="noopener noreferrer"><FaTelegramPlane size={40}/></a>
+                    <a href="https://github.com/nusantarachain" target="_blank" rel="noopener noreferrer"><FaGithub size={35} /></a>
+                    <a href="https://t.me/nusantarashain" target="_blank" rel="noopener noreferrer"><FaTelegramPlane size={35}/></a>
                 </div>
             </div>
         </nav>

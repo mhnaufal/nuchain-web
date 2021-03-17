@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import hljs from "highlight.js";
-import shell from "highlight.js/lib/languages/shell";
-hljs.registerLanguage("shell", shell);
+import powershell from "highlight.js/lib/languages/powershell";
+hljs.registerLanguage("powershell", powershell);
 
 const Installation = () => {
   useEffect(() => {
@@ -12,48 +12,49 @@ const Installation = () => {
   return (
     <>
       <div className={styles.main} id="installation">
-        <h1 className={styles.title2}>Installation</h1><hr></hr>
+        <h1 className={styles.title2}>Installation</h1>
+        <hr></hr>
         <h3>Docker</h3>
         <pre>
-          <code className="shell">
+          <code className="powershell">
             $ docker run --rm \<pre></pre>
-            <pre>   -v '/var/data:/data' \</pre>
-            <pre>   -p '9933:9933' \</pre>
-            <pre>   -p '9944:9944' \</pre>
-            <pre>   -p '30333:30333' \</pre>
-            <pre>   --name nuchain anvie/nuchain:latest-alpine \</pre>
-            <pre>   nuchain --base-path=/data</pre>
+            <pre> -v '/var/data:/data' \</pre>
+            <pre> -p '9933:9933' \</pre>
+            <pre> -p '9944:9944' \</pre>
+            <pre> -p '30333:30333' \</pre>
+            <pre> --name nuchain anvie/nuchain:latest-alpine \</pre>
+            <pre> nuchain --base-path=/data</pre>
           </code>
         </pre>
         <h3>MacOS</h3>
         <pre>
-          <code className="shell">
-            <pre># Install Homebrew if necessary https://brew.sh/ </pre>
+          <code className="powershell">
             <pre>
               /bin/bash -c "$(curl -fsSL
               https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
             </pre>
             <pre>
-              # Make sure Homebrew is up-to-date, install openssl and cmake{" "}
             </pre>
             <pre>brew update </pre>
             <pre>brew install openssl cmake</pre>
+            <pre># Install Homebrew if necessary https://brew.sh/ </pre>
+              # Make sure Homebrew is up-to-date, install openssl and cmake{" "}
           </code>
         </pre>
         <h3>Ubuntu/Debian</h3>
         <pre>
-          <code className="shell">
+          <code className="powershell">
             <pre>sudo apt update </pre>
-            <pre># May prompt for location information </pre>
             <pre>
               sudo apt install -y cmake pkg-config libssl-dev git
               build-essential clang libclang-dev curl libz-dev
             </pre>
+            <pre># May prompt for location information </pre>
           </code>
         </pre>
         <h3>Arch Linux</h3>
         <pre>
-          <code className="shell">
+          <code className="powershell">
             <pre>
               pacman -Syu --needed --noconfirm cmake gcc openssl-1.0 pkgconf git
               clang{" "}
@@ -62,7 +63,15 @@ const Installation = () => {
             <pre>export OPENSSL_INCLUDE_DIR="/usr/include/openssl-1.0"</pre>
           </code>
         </pre>
-        <p><a href="https://github.com/nusantarachain/nuchain#instalasi" target="_blank" rel="noopener noreferrer">Lebih lengkapnya klik disini</a></p>
+        <p>
+          <a
+            href="https://github.com/nusantarachain/nuchain#instalasi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lebih lengkapnya klik disini
+          </a>
+        </p>
       </div>
       <style jsx>{`
         div {
@@ -94,7 +103,7 @@ const Installation = () => {
           width: 70%;
           margin-bottom: 2%;
           border: 0;
-          height: 1px;
+          height: 2px;
           background: linear-gradient(to right, #ebfff6, #02a808, #ebfff6);
         }
       `}</style>

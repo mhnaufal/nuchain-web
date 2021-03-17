@@ -5,13 +5,17 @@ const Roadmap = () => {
     <>
       <div className={styles.main} id="roadmap">
         <h1 className={styles.title2}>Roadmap</h1>
-        <h2>Nuchain akan dikembangan dalam <strong>6 fase:</strong></h2><hr></hr>
+        <h2>
+          Nuchain akan dikembangan dalam <strong>6 fase:</strong>
+        </h2>
+        <hr></hr>
         <div className="wrapper">
           <div className="row">
             <div className="column">
               <div className="left-column">
-                <h3>Fase 00<pre>
-                  Inisiasi</pre></h3>
+                <h3>
+                  Fase 00<pre>Inisiasi</pre>
+                </h3>
               </div>
             </div>
             <div className="column">
@@ -27,8 +31,9 @@ const Roadmap = () => {
           <div className="row">
             <div className="column">
               <div className="left-column">
-                <h3>Fase 01 <pre>
-                  Genesis</pre></h3>
+                <h3>
+                  Fase 01 <pre>Genesis</pre>
+                </h3>
               </div>
             </div>
             <div className="column">
@@ -55,8 +60,9 @@ const Roadmap = () => {
           <div className="row">
             <div className="column">
               <div className="left-column">
-                <h3>Fase 02 <pre>
-                  NPoS</pre></h3>
+                <h3>
+                  Fase 02 <pre>NPoS</pre>
+                </h3>
               </div>
             </div>
             <div className="column">
@@ -80,8 +86,9 @@ const Roadmap = () => {
           <div className="row">
             <div className="column">
               <div className="left-column">
-                <h3>Fase 03 <pre>
-                  Governance</pre></h3>
+                <h3>
+                  Fase 03 <pre>Governance</pre>
+                </h3>
               </div>
             </div>
             <div className="column">
@@ -94,8 +101,9 @@ const Roadmap = () => {
           <div className="row">
             <div className="column">
               <div className="left-column">
-                <h3>Fase 04 <pre>
-                  Revolt</pre></h3>
+                <h3>
+                  Fase 04 <pre>Revolt</pre>
+                </h3>
               </div>
             </div>
             <div className="column">
@@ -122,8 +130,9 @@ const Roadmap = () => {
           <div className="row">
             <div className="column">
               <div className="left-column">
-                <h3>Fase 05 <pre>
-                  Pengembangan</pre></h3>
+                <h3>
+                  Fase 05 <pre>Pengembangan</pre>
+                </h3>
               </div>
             </div>
             <div className="column">
@@ -162,8 +171,9 @@ const Roadmap = () => {
           flex-wrap: wrap;
           width: 100%;
           transition: color 0.15s ease, border-color 0.15s ease;
-          padding: 1.1rem;
-          margin: 0.5rem 0;
+          padding: 1.5rem 0;
+          margin: 1.5rem 0;
+          overflow: hidden;
         }
 
         .column {
@@ -187,7 +197,7 @@ const Roadmap = () => {
         }
 
         .left-column p,
-        .right-column p{
+        .right-column p {
           display: flex;
           text-align: center;
           font-size: 1.25rem;
@@ -199,15 +209,16 @@ const Roadmap = () => {
         .right-column ol {
           display: flex;
           text-align: justify;
-          font-size: 1.1rem;
-          line-height: 2;
+          font-size: 1.2rem;
+          line-height: 1;
           display: block;
           color: #fff;
+          margin-right: 1.3em;
         }
 
         .row:hover {
-          border: 3.5px solid #000;
-          box-shadow: 10px 10px 3px black;
+          border: 3px solid #000;
+          box-shadow: 8px 8px black;
         }
 
         h2 {
@@ -219,9 +230,9 @@ const Roadmap = () => {
         }
 
         .row:hover pre {
-          font-size: 1.3em;
+          font-size: 1.4em;
           font-weight: bold;
-          color: #015718;
+          color: #013b10;
         }
 
         hr {
@@ -231,7 +242,6 @@ const Roadmap = () => {
           height: 2px;
           background: linear-gradient(to right, #309a42, #fff, #309a42);
         }
-
       `}</style>
     </>
   );
