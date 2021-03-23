@@ -75,11 +75,13 @@ const Contribution = () => {
           width: 50%;
           text-align: justify;
         }
+
         ul {
           width: 60%;
           margin: auto;
           list-style-type: none;
         }
+
         li {
           line-height: 1.8;
           text-align: center;
@@ -100,7 +102,16 @@ const Contribution = () => {
           background: #028c47;
           font-weight: 650;
           box-shadow: 0 8px 2px black;
+        }
 
+        @media (max-width: 600px) {
+          ul {
+            width: 100%;
+          }
+
+          h3 {
+            font-size: 1em;
+          }
         }
       `}</style>
     </>

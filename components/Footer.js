@@ -31,6 +31,18 @@ const Footer = () => {
                 opacity: 0.8;
                 cursor: pointer;
             }
+
+            @media (max-width: 600px) {
+                button {
+                    display: none;
+                }
+            }
+
+            @media (min-width: 601px) and (max-width: 1180px) {
+                button {
+                    display: none;
+                }
+            }
         `}</style>
         </>
     );

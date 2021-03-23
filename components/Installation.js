@@ -7,17 +7,19 @@ hljs.registerLanguage("powershell", powershell);
 const Installation = () => {
   useEffect(() => {
     hljs.initHighlighting();
+    console.log(window.innerWidth);
   }, []);
 
   return (
     <>
+      {/* FIXME: highlight.js render error due to untriggered useEffect */}
       <div className={styles.main} id="installation">
         <h1 className={styles.title2}>Installation</h1>
         <hr></hr>
         <h3>Docker</h3>
         <pre>
           <code className="powershell">
-            $ docker run --rm \<pre></pre>
+            <pre>$ docker run --rm \</pre>
             <pre> -v '/var/data:/data' \</pre>
             <pre> -p '9933:9933' \</pre>
             <pre> -p '9944:9944' \</pre>
@@ -33,12 +35,13 @@ const Installation = () => {
               /bin/bash -c "$(curl -fsSL
               https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
             </pre>
-            <pre>
-            </pre>
+            <pre></pre>
             <pre>brew update </pre>
             <pre>brew install openssl cmake</pre>
             <pre># Install Homebrew if necessary https://brew.sh/ </pre>
+            <pre>
               # Make sure Homebrew is up-to-date, install openssl and cmake{" "}
+            </pre>
           </code>
         </pre>
         <h3>Ubuntu/Debian</h3>
@@ -105,6 +108,34 @@ const Installation = () => {
           border: 0;
           height: 2px;
           background: linear-gradient(to right, #ebfff6, #02a808, #ebfff6);
+        }
+
+        @media (max-width: 600px) {
+          code {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+          }
+
+          pre {
+            margin-left: 0.5rem;
+            white-space: pre-wrap;
+          }
+        }
+
+        @media (min-width: 601px) and (max-width: 1180px) {
+          code {
+            width: 100%;
+            margin auto;
+            display: flex;
+            flex-direction: column;
+          }
+          
+          pre {
+            margin-left: 0.5rem;
+            white-space: pre-wrap;
+          }
         }
       `}</style>
     </>

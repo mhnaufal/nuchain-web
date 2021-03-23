@@ -242,6 +242,18 @@ const Roadmap = () => {
           height: 2px;
           background: linear-gradient(to right, #309a42, #fff, #309a42);
         }
+
+        @media (max-width: 600px) {
+          h2 {
+            margin: auto;
+            text-align: center;
+          }
+
+          .wrapper {
+            margin: auto;
+            width: 90%;
+          }
+        }
       `}</style>
     </>
   );

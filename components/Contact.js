@@ -71,6 +71,17 @@ const Contact = () => {
         li:hover {
           opacity: 0.4;
         }
+
+        @media (max-width: 600px) {
+          h3 {
+            font-size: 1em;
+          }
+
+          li {
+            width: auto;
+            margin-left: 0.5em;
+          }
+        }
       `}</style>
     </>
   );

@@ -107,7 +107,6 @@
   display: inline-block;
   vertical-align: top;
   text-align: center;
-
 }
 
 .navbar li a {
@@ -116,9 +115,48 @@
   padding: 25px 16px;
 }
 
+/* TODO: Create dropdown button for mobile phone navbar (media query effect) */
 @media (max-width: 600px) {
-  .container {
+  .container,
+  .main {
     width: 100%;
     flex-direction: column;
+  }
+
+  .navbar li {
+    float: none;
+    width: 100%;
+    display: none;
+  }
+
+  .title {
+    font-size: 6.5em;
+    text-align: center;
+    width: auto;
+  }
+
+  .title2 {
+    width: auto;
+    font-size: 4em;
+    text-align: center;
+  }
+}
+@media (min-width: 601px) and (max-width: 1180px) {
+  .navbar li {
+    float: none;
+    width: 100%;
+    display: none;
+  }
+
+  .title {
+    font-size: 6.5em;
+    text-align: center;
+    width: auto;
+  }
+
+  .title2 {
+    width: auto;
+    font-size: 4em;
+    text-align: center;
   }
 }

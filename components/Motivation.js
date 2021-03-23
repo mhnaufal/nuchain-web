@@ -66,7 +66,7 @@ const Motivation = () => {
           text-align: justify;
           justify-content: center;
           flex-wrap: wrap;
-          max-width: 60%;
+          width: 60%;
           list-style-type: none;
         }
 
@@ -82,6 +82,17 @@ const Motivation = () => {
           border: 0;
           height: 2px;
           background: linear-gradient(to right, #ebfff6, #02a808, #ebfff6);
+        }
+
+        @media (max-width: 600px) {
+          li {
+            width: auto;
+          }
+
+          ul {
+            width: auto;
+            max-width: 95%;
+          }
         }
       `}</style>
     </>
