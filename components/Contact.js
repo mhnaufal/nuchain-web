@@ -18,7 +18,7 @@ const Contact = () => {
               rel="noopener noreferrer"
             >
               <h4>
-                <FaTelegramPlane size={60} />
+                <FaTelegramPlane size={50} />
               </h4>
             </a>
           </li>
@@ -29,7 +29,7 @@ const Contact = () => {
               rel="noopener noreferrer"
             >
               <h4>
-                <FaMailBulk size={60} />
+                <FaMailBulk size={50} />
               </h4>
             </a>
           </li>
@@ -40,7 +40,7 @@ const Contact = () => {
               rel="noopener noreferrer"
             >
               <h4>
-                <FaGithub size={60} />
+                <FaGithub size={50} />
               </h4>
             </a>
           </li>
@@ -65,7 +65,7 @@ const Contact = () => {
           display: inline;
           float: left;
           margin: 0em 3em;
-          color: green;
+          color: #1a6601;
         }
 
         li:hover {
@@ -73,6 +73,17 @@ const Contact = () => {
         }
 
         @media (max-width: 600px) {
+          h3 {
+            font-size: 1em;
+          }
+
+          li {
+            width: auto;
+            margin-left: 0.5em;
+          }
+        }
+
+        @media (max-width: 800px) {
           h3 {
             font-size: 1em;
           }

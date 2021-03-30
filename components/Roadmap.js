@@ -45,14 +45,14 @@ const Roadmap = () => {
                   untuk nantinya akan beralih ke mode NPoS (Nominated Proof of
                   Stake)
                 </p>
-                <p>Pada fase ini pengguna awal bisa melakukan:</p>
-                <ol>
+                {/* <p>Pada fase ini pengguna awal bisa melakukan:</p> */}
+                {/* <ol>
                   <li>Klaim token dari fase 00</li>
                   <li>
                     Stake token dan mengajukan diri untuk menjadi validator atau
                     nominator
                   </li>
-                </ol>
+                </ol> */}
               </div>
             </div>
           </div>
@@ -171,7 +171,7 @@ const Roadmap = () => {
           flex-wrap: wrap;
           width: 100%;
           transition: color 0.15s ease, border-color 0.15s ease;
-          padding: 1.5rem 0;
+          padding: 1rem 1rem;
           margin: 1.5rem 0;
           overflow: hidden;
         }
@@ -218,7 +218,7 @@ const Roadmap = () => {
 
         .row:hover {
           border: 3px solid #000;
-          box-shadow: 8px 8px black;
+          box-shadow: 3px 4px black;
         }
 
         h2 {
@@ -251,7 +251,34 @@ const Roadmap = () => {
 
           .wrapper {
             margin: auto;
+            width: 80%;
+          }
+
+          .row {
+            display: block;
+          }
+          
+        }
+
+        @media (max-width: 800px) {
+          .wrapper {
+            margin: auto;
             width: 90%;
+          }
+
+          .row {
+            display: block;
+          }
+
+          h2, p {
+            margin: auto;
+            text-align: center;
+          }
+
+          .right-column {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
           }
         }
       `}</style>

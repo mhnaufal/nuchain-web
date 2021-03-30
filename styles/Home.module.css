@@ -92,6 +92,7 @@
   opacity: 0.95;
   padding-top: 0.2rem;
   padding-bottom: 0.1rem;
+  box-shadow: 0px 3px 2px #70c17c;
 }
 
 .navbar li {
@@ -157,6 +158,26 @@
   .title2 {
     width: auto;
     font-size: 4em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar li {
+    float: none;
+    width: 100%;
+    display: none;
+  }
+
+  .title {
+    text-align: center;
+    width: auto;
+    font-size: 6em;
+  }
+
+  .title2 {
+    width: auto;
+    font-size: 3.5em;
     text-align: center;
   }
 }

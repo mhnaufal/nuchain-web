@@ -87,7 +87,7 @@ const Navbar = () => {
           display: inline;
           float: right;
           margin-right: 1.5em;
-          margin-top: 0.5em;
+          margin-top: 1.1em;
           color: white;
         }
 

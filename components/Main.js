@@ -37,6 +37,7 @@ const Main = () => {
         @media (max-width: 600px) {
           p {
             width: auto;
+            font-size: 1.2rem;
           }
         }
       `}</style>

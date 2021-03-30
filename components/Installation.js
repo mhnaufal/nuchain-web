@@ -120,7 +120,7 @@ const Installation = () => {
 
           pre {
             margin-left: 0.5rem;
-            white-space: pre-wrap;
+            white-space: pre-line;
           }
         }
 
@@ -134,7 +134,7 @@ const Installation = () => {
           
           pre {
             margin-left: 0.5rem;
-            white-space: pre-wrap;
+            white-space: pre-line;
           }
         }
       `}</style>
